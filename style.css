@@ -86,28 +86,39 @@ footer a:hover{
   text-decoration: underline;
 }
 
+.search-bar{
+  width: 25vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  align-items: center;
+  justify-content: center;
+}
+
 form input[type="text"]{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;  
   width: 450px;
   height: 40px;
   border-radius: 100px;
   border: 1px solid grey;
   margin: 20px;
   padding-left: 40px;
-  position: relative;
 }
 
 .search{
-  position: absolute;
-  left: 750px;
-  top: 488px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   color: grey;
+  justify-self: center;
+  padding-left: 10px;
 }
 
 .mic{
-  position: absolute;
-  left: 1150px;
-  top: 488px;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
   color: grey;
+  justify-self: center;
 }
 
 form input[type="text"]:hover{
